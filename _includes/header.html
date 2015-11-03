@@ -1,20 +1,17 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -36,40 +33,18 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="intro-overlay"></div>
-        <div class="container">
-          <!--
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="intro-overlay"></div>
+            <div class="container relative">
+                <h1 class="brand-heading">trash <br /><small>/træʃ/</small></h1>
+                <h2>noun</h2>
+                <ol class="lead">
+                  <li>anything worthless, useless, or discarded; rubbish.</li>
+                  <li>foolish or pointless ideas, talk, or writing; nonsense.</li>
+                  <li>a worthless or disreputable person.</li>
+                </ol>
             </div>
-          -->
-          <!--
-            <div class="intro-text">
-              <h1 class="intro-heading">notebook <br /><small>/ˈnəʊtˌbʊk/</small></h1>
-              <h2>noun</h2>
-              <ol class="lead">
-                <li>a book for recording notes or memoranda.</li>
-                <li>a book for registering promissory notes.</li>
-              </ol>
-            </div>
-          -->
-          <div class="intro-text">
-            <h1 class="intro-heading">trash <br /><small>/træʃ/</small></h1>
-            <h2>noun</h2>
-            <ol class="lead">
-              <li>anything worthless, useless, or discarded; rubbish.</li>
-              <li>foolish or pointless ideas, talk, or writing; nonsense.</li>
-              <li>a worthless or disreputable person.</li>
-            </ol>
-          </div>
         </div>
     </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
