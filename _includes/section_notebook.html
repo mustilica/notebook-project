@@ -1,0 +1,34 @@
+<!-- Notebook Grid Section -->
+<section class="grid bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center text-block">
+        <h2 class="service-heading">Handmade notebooks from trash</h2>
+        <h3 class="section-subheading text-muted">Upcycling community's refuse with community's records, ideas, memories...</h3>
+        <p class="lead text-left">Notebooks have been used for different purposes such as drawing, writing and recording results of experiments, ideas or memoranda by many artists, scientists, and thinkers through the ages. Here there are different types of notebooks regarding their color, shape, size and combination. They are simple, imperfect and different than usual industrial notebooks, but more importantly they are from trash. Every one of them has a unique serial and with that serial the (hi)story of it can be viewed.</p>
+      </div>
+    </div>
+    <div class="row">
+      {% for notebook in site.notebooks %}
+      <div class="col-md-4 col-sm-6 grid-item">
+        {% if notebook.type == "modal" %}
+        <a href="#notebookModal{{ notebook.modal-id }}" class="grid-link" data-toggle="modal">
+          <div class="grid-hover">
+            <div class="grid-hover-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
+        </a>
+        {% else %}
+          <img src="{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
+        {% endif %}
+        <div class="grid-caption">
+          <h4>{{ notebook.title }}</h4>
+          <p class="text-muted">{{ notebook.subtitle }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

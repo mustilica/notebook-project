@@ -1,13 +1,15 @@
-    <!-- Download Section -->
-    <section id="seperator" class="text-left">
-        <div class="seperator-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <blockquote>
-                        <p>{{ include.quote }}</p>
-                        <footer class="text-left">{{ include.author }} <!--in <cite title="{{ include.source }}">{{ include.source }}</cite>--></footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Section Seperator -->
+<section id="seperator" class="text-left">
+  <div class="seperator-section {{ include.class }}">
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <blockquote class="lead">
+          <p class="lead">{{ include.quote }}</p>
+          <footer class="text-left">{{ include.author }}
+            <!--in <cite title="{{ include.source }}">{{ include.source }}</cite>-->
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>

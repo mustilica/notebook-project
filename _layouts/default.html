@@ -1,18 +1,14 @@
+<!-- （◕‿◢） -->
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-    <body id="page-top" class="index">
+<body id="page-top" class="index">
 
-    {% include header.html %}
-    {% include about.html %}
-    {% include seperator.html quote="Anger is nothing to garbage:<br />Garbage eats anger for breakfast.<br />It eats all of us in the end." author="Priscila Uppal" source="" %}
-    {% include notebook_grid.html %}
-    {% include seperator.html quote="One day, in a rubbish heap, I found an old bicycle seat lying beside a rusted handlebar, and my mind instantly linked them together. I assembled these two objects, which everyone then recognized as a bull’s head. The metamorphosis was accomplished, and I wish another metamorphosis would occur in the reverse sense. If my bull’s head were thrown in a junk heap, perhaps one day some boy would say, 'Here’s something that would make a good handlebar for my bicycle!'" author="Pablo Picasso" source="" %}
-    {% include footer.html %}
-    {% include modals.html %}
-    {% include js.html %}
+  {{ content }}
+  {% include js.html %}
 
-    </body>
+</body>
+
 </html>

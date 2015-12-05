@@ -2,19 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+{% include header.html %}
+{% include section_about.html %}
+{% include quotation.html quote="One can even shout out through refuse..." author="Kurt Schwitters" source="" %}
+  {% comment %}
+    {% include quote_parallax.html id="garbage" class="garbage-background" quote="Anger is nothing to garbage:<br />Garbage eats anger for breakfast.<br />It eats all of us in the end." author="Priscila Uppal" source="" %}
+  {% endcomment %}
+{% include header_parallax.html id="headerNotebooks" class="background-notebooks" title="NOTEBOOKS" %}
+{% include section_notebook.html %}
+  {% comment %}
+    {% include seperator.html id="picasso" class="picasso-background long-seperator-section" quote="One day, in a rubbish heap, I found an old bicycle seat lying beside a rusted handlebar, and my mind instantly linked them together. I assembled these two objects, which everyone then recognized as a bull’s head. The metamorphosis was accomplished, and I wish another metamorphosis would occur in the reverse sense. If my bull’s head were thrown in a junk heap, perhaps one day some boy would say, 'Here’s something that would make a good handlebar for my bicycle!'" author="Pablo Picasso" source="" %}
+  {% endcomment %}
+{% include email_action.html %}
+{% include header_parallax.html id="headerTrashes" class="background-trashes" title="TRASHES" %}
+{% include section_trash.html %}
+{% include footer.html %}
+{% include notebook_modals.html %}
+{% include generic_modal.html id="Collaborators" title="Collaborators" body="<ul><li>Ersan Ocak (as supervisor and collector of trash)</li></ul>" %}
+{% include generic_modal.html id="Credits" title="Credits" body="<ul><li>Bootstrap</li></ul>" %}
