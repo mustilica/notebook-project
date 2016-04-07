@@ -1,7 +1,7 @@
 url: https://mustilica.github.io
 baseurl: /notebook-project
+dropboxbaseurl: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project
 
-# Site settings
 title: Notebook Project
 email: notebook.project@kulu.be
 description: "trash, junk, garbage, rubbish, notebook, craft, art, art project, transformation, treasure"
@@ -30,5 +30,6 @@ collections:
     output: true
   trashes:
     output: true
+  modals:
 
 exclude: [README.md, LICENSE]

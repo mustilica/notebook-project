@@ -526,16 +526,16 @@ aside {
   background: rgb(238, 238, 238);
   /* Old browsers */
 
-  background: -moz-linear-gradient(45deg, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+  background: -moz-linear-gradient(45deg, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 100%);
   /* FF3.6-15 */
 
-  background: -webkit-linear-gradient(45deg, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 100%);
   /* Chrome10-25,Safari5.1-6 */
 
-  background: linear-gradient(45deg, rgba(238, 238, 238, 1) 0%, rgba(221, 221, 221, 1) 100%);
+  background: linear-gradient(45deg, rgba(221, 221, 221, 1) 0%, rgba(238, 238, 238, 1) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#eeeeee', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -560,7 +560,8 @@ aside {
   display: inline-block;
 }
 .background-notebooks {
-  background-image: url(https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Notebooks/notebooks_stacked.jpg);
+  /*background-image: url(https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Notebooks/notebooks_stacked.jpg);*/
+  background-image: url(https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Notebooks/notebooks_inthebox.jpg);
 }
 .background-trashes {
   background-image: url(https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/CollectionPlaces/WasteBinMETU_black_overlay.jpg);

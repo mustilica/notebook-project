@@ -1,31 +1,32 @@
 ---
+layout: notebook_details
 title: Puzzle
-subtitle: 8 pieces, around 20x15 cm.
+subtitle: 23 pieces, around 20x15 cm.
 type: modal
-modal-id: 1
+modal-id: Puzzle
 date: 2015-11-01
-cover-img: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/CollectionPlaces/banner.jpg
-thumbnail: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Notebooks/puzzle_open_s.jpg
+cover-img: /CollectionPlaces/banner.jpg
+thumbnail: /Notebooks/puzzle_open_s.jpg
 cover-img-alt: METU Computer Engineering Graduation Banner
 thumbnail-alt:
 project-date: November 2015
 progress:
- - thumbnail: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/CollectionPlaces/banner_cube.jpg
+ - thumbnail: /CollectionPlaces/banner_cube.jpg
    thumbnail-alt:
    title: Banner
    date: July 2011
    description: Graduation banner of METU Computer Engineering new grads.
- - thumbnail: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Progress/banner_cut_out_s.jpg
+ - thumbnail: /Progress/banner_cut_out_s.jpg
    thumbnail-alt:
    title: Cutting
    date: 2015
    description: Long banner cut out to the small pieces.
- - thumbnail: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Progress/puzzle_together_s.jpg
+ - thumbnail: /Progress/puzzle_together_s.jpg
    thumbnail-alt:
    title: Cover
    date: 2015
    description:
- - thumbnail: https://dl.dropboxusercontent.com/u/8737486/staticProjects/notebook-project/Progress/puzzle_combined_s.jpg
+ - thumbnail: /Progress/puzzle_combined_s.jpg
    thumbnail-alt:
    title: Merged
    date: 2015

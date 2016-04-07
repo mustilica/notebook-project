@@ -18,10 +18,10 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
+          <img src="{{ site.dropboxbaseurl }}{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
         </a>
         {% else %}
-          <img src="{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
+          <img src="{{ site.dropboxbaseurl }}{{ notebook.thumbnail }}" class="img-responsive" alt="{{ notebook.thumbnail-alt }}">
         {% endif %}
         <div class="grid-caption">
           <h4>{{ notebook.title }}</h4>

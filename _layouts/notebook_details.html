@@ -1,0 +1,48 @@
+<div class="notebook-modal modal fade" id="notebookModal{{ page.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ page.title }}</h2>
+            <hr class="star-primary">
+            <img src="{{ site.dropboxbaseurl }}{{ page.cover-img }}" class="img-responsive img-centered" alt="{{ page.cover-img-alt }}">
+            <p>{{ page.description }}</p>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="col-lg-8 col-lg-offset-2">
+          <h3>Progress</h3>
+          <hr class="star-primary">
+          <ul class="timeline">
+            {% for p in page.progress %}
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="{{ site.dropboxbaseurl }}{{ p.thumbnail }}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ p.date }}</h4>
+                  <h4 class="subheading">{{ p.title }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{ p.description }}</p>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+          <hr class="star-primary">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
