@@ -14,7 +14,7 @@
           <div class="modal-body">
             <h2>{{ notebook.title }}</h2>
             <hr class="star-primary">
-            <img src="{{ notebook.cover-img }}" class="img-responsive img-centered" alt="{{ notebook.cover-img-alt }}">
+            <img src="{{ site.dropboxbaseurl }}{{ notebook.cover-img }}" class="img-responsive img-centered" alt="{{ notebook.cover-img-alt }}">
             <p>{{ notebook.description }}</p>
           </div>
         </div>
@@ -27,7 +27,7 @@
             {% for p in notebook.progress %}
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="img-circle img-responsive" src="{{ p.thumbnail }}" alt="">
+                <img class="img-circle img-responsive" src="{{ site.dropboxbaseurl }}{{ p.thumbnail }}" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
